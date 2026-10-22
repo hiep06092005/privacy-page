@@ -5,24 +5,145 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - Health AI</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; }
-        h1, h2, h3 { color: #1a73e8; }
-        h1 { border-bottom: 2px solid #1a73e8; padding-bottom: 10px; }
-        .date { font-style: italic; color: #666; }
-        .disclaimer { background: #f8d7da; border-left: 4px solid #dc3545; padding: 12px; margin: 20px 0; border-radius: 4px; }
-        .contact { background: #e8f0fe; padding: 15px; border-radius: 6px; }
+        :root {
+            --primary-color: #1a73e8;
+            --text-color: #202124;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --border-color: #dadce0;
+            --danger-color: #d93025;
+            --danger-bg: #fce8e6;
+            --info-bg: #e8f0fe;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            border: 1px solid var(--border-color);
+        }
+
+        h1 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 12px;
+            font-size: 28px;
+            margin-top: 0;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            font-size: 20px;
+            margin-top: 28px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 6px;
+        }
+
+        h3 {
+            font-size: 16px;
+            color: #3c4043;
+            margin-top: 18px;
+        }
+
+        .meta-info {
+            font-size: 14px;
+            color: #5f6368;
+            background-color: #f1f3f4;
+            padding: 10px 15px;
+            border-radius: 4px;
+            margin-bottom: 24px;
+        }
+
+        .disclaimer-box {
+            background-color: var(--danger-bg);
+            border-left: 4px solid var(--danger-color);
+            padding: 16px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .disclaimer-box h2 {
+            color: var(--danger-color);
+            margin-top: 0;
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .contact-box {
+            background-color: var(--info-bg);
+            border: 1px solid #aecbfa;
+            padding: 20px;
+            border-radius: 6px;
+            margin-top: 20px;
+        }
+
+        ul, ol {
+            padding-left: 24px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        code {
+            background-color: #f1f3f4;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 14px;
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 22px;
+            }
+            h2 {
+                font-size: 18px;
+            }
+        }
     </style>
 </head>
 <body>
 
+<div class="container">
     <h1>Privacy Policy for Health AI</h1>
-    <p class="date">Effective Date: October 22, 2026 | Last Updated: October 22, 2026</p>
+    
+    <div class="meta-info">
+        <strong>Effective Date:</strong> October 22, 2026 &nbsp;|&nbsp; 
+        <strong>Last Updated:</strong> October 22, 2026
+    </div>
 
     <p>HealthAI Team ("we", "our", or "us") operates the <strong>Health AI</strong> mobile application (the "App"). We are committed to protecting your privacy and ensuring the security of your personal and sensitive health data.</p>
 
     <p>This Privacy Policy describes how we collect, use, store, share, and protect your information when you use our App, in compliance with applicable data privacy laws (including GDPR, CCPA/CPRA) and the <strong>Google Play Developer Program Policies</strong> (specifically the User Data Policy and Health Apps Policy).</p>
 
-    <div class="disclaimer">
+    <p>By downloading, accessing, or using Health AI, you agree to the collection and use of information in accordance with this Privacy Policy. If you do not agree with this policy, please do not use the App.</p>
+
+    <div class="disclaimer-box">
         <h2>1. Important Medical Disclaimer</h2>
         <p><strong>Health AI is designed exclusively for general wellness, fitness tracking, and lifestyle informational purposes. The App is NOT a medical device, nor does it provide medical diagnosis, medical advice, treatment, or clinical recommendations.</strong></p>
         <ul>
@@ -32,55 +153,86 @@
     </div>
 
     <h2>2. Information We Collect</h2>
+    <p>We collect information directly from you, automatically through your device, and via integrated features to deliver a personalized wellness experience:</p>
+
     <h3>A. Personal Information You Provide</h3>
     <ul>
-        <li><strong>Account Registration:</strong> Full name, email address, password (hashed and encrypted), or authentication tokens if logging in via third-party providers.</li>
+        <li><strong>Account Registration:</strong> Full name, email address, password (hashed and encrypted), or authentication tokens if logging in via third-party providers (e.g., Google Sign-In).</li>
         <li><strong>User Profile & Demographic Metrics:</strong> Age, gender, height, weight, daily water intake goals, and fitness targets.</li>
         <li><strong>Health & Lifestyle Data:</strong> Dietary supplement intake schedules, supplement logs, hydration levels, activity logs, and personal health habits.</li>
     </ul>
 
     <h3>B. Device Sensors & Technical Permissions</h3>
+    <p>Depending on the features you enable, our App may request the following permissions:</p>
     <ul>
-        <li><strong>Camera & Photos (<code>CAMERA</code>):</strong> Used exclusively when you choose to take or upload photos (such as scanning supplement packaging or profile pictures).</li>
-        <li><strong>Motion Sensors (Accelerometer / Gyroscope):</strong> Used to detect movement and measure physical steps.</li>
-        <li><strong>Location Information (<code>ACCESS_FINE_LOCATION</code>):</strong> Used exclusively during active outdoor workout tracking. We do not track location in the background.</li>
-        <li><strong>Local Storage (<code>SharedPreferences</code>):</strong> Used on your device to store offline preferences and session tokens.</li>
+        <li><strong>Camera & Photos (<code>CAMERA</code>, Photo Library):</strong> Used exclusively when you choose to take or upload photos (such as scanning supplement packaging, food logs, or setting a profile picture). We do not access your photo library without explicit user action.</li>
+        <li><strong>Motion Sensors (<code>Sensors</code> / Accelerometer / Gyroscope):</strong> Used to detect movement, measure physical steps, and track daily activity.</li>
+        <li><strong>Location Information (<code>ACCESS_FINE_LOCATION</code>, <code>ACCESS_COARSE_LOCATION</code>):</strong> If granted, precise or approximate location is used exclusively during active outdoor workout tracking (e.g., walking, running distance). We do not track your location in the background when the app is closed unless explicitly requested and permitted for active workouts.</li>
+        <li><strong>Local Storage (<code>SharedPreferences</code>):</strong> Used on your device to store offline preferences, theme settings, session tokens, and local cache.</li>
+    </ul>
+
+    <h3>C. Automatically Collected Usage & Log Data</h3>
+    <ul>
+        <li><strong>Device Information:</strong> Device model, operating system version, unique device identifiers, language settings, and network connection status.</li>
+        <li><strong>Diagnostics & Crash Data:</strong> Crash logs, performance metrics, and app error logs to ensure application stability.</li>
     </ul>
 
     <h2>3. How We Use Your Information</h2>
+    <p>We process your data strictly for legitimate, transparent purposes:</p>
     <ol>
-        <li>Delivering core wellness services and hydration algorithms.</li>
-        <li>Personalizing daily goals and habit reminders.</li>
-        <li>Social & Community features (optional opt-in).</li>
-        <li>Account security and authentication.</li>
-        <li>Troubleshooting bugs and improving app performance.</li>
+        <li><strong>Delivering Core Services:</strong> Providing daily activity dashboards, tracking supplement schedules, calculating water intake requirements, and interactive mascot health feedback.</li>
+        <li><strong>Personalization:</strong> Customizing daily targets and habit reminders based on your registered physical metrics and health preferences.</li>
+        <li><strong>Social & Community Features (Optional):</strong> Allowing you to connect with friends, share activity progress, and participate in health leaderboards (only upon active opt-in).</li>
+        <li><strong>Security & Authentication:</strong> Verifying user accounts, preventing fraudulent logins, and ensuring the integrity of user sessions.</li>
+        <li><strong>App Improvement & Bug Fixing:</strong> Analyzing aggregated, anonymized usage patterns to troubleshoot issues and enhance app performance.</li>
     </ol>
 
     <h2>4. No Sale of Personal or Health Data</h2>
     <p><strong>We do NOT sell, rent, lease, or commercialize your personal information, physical metrics, or sensitive health data to data brokers, advertising networks, or any third party.</strong></p>
+    <p>We do not use sensitive health or fitness data for targeted behavioral advertising.</p>
 
     <h2>5. Sharing and Disclosure of Information</h2>
-    <p>We only share data with trusted cloud infrastructure providers bound by strict processing agreements, with your express consent, or to comply with legal obligations.</p>
-
-    <h2>6. Data Security and Storage</h2>
-    <p>We utilize TLS/HTTPS encryption in transit and AES encryption at rest to protect your sensitive health credentials and personal metrics.</p>
-
-    <h2>7. Data Retention and Account Deletion</h2>
-    <p>You have the right to permanently delete your account and data at any time:</p>
+    <p>We will only disclose your data under the following limited circumstances:</p>
     <ul>
-        <li><strong>In-App:</strong> Go to <code>Settings > Account > Delete Account</code>.</li>
-        <li><strong>Email Request:</strong> Email us at <strong>thanhhoa120409@gmail.com</strong> with the subject "Data Deletion Request". Requests are processed within 30 days.</li>
+        <li><strong>Service Providers:</strong> Trusted third-party cloud infrastructure, database hosting, and crash analytics providers. These vendors are bound by strict data processing agreements and are prohibited from using your data for any independent purpose.</li>
+        <li><strong>With Your Explicit Consent:</strong> If you choose to share your progress or challenge achievements with friends within the App.</li>
+        <li><strong>Legal Compliance:</strong> When required by law, subpoena, or valid legal process, or to protect the safety, rights, or property of our users or the public.</li>
     </ul>
 
-    <h2>8. Children's Privacy</h2>
-    <p>Health AI is intended for individuals aged 16 and older. We do not knowingly collect personal data from children under 13.</p>
+    <h2>6. Data Security and Storage</h2>
+    <p>We implement industry-standard physical, technical, and administrative safeguards to protect your personal data:</p>
+    <ul>
+        <li><strong>Encryption in Transit:</strong> All communications between the App and backend servers are encrypted using modern Transport Layer Security (TLS/HTTPS).</li>
+        <li><strong>Encryption at Rest:</strong> Sensitive credentials, tokens, and data stored in databases or local storage are encrypted.</li>
+        <li><strong>Access Controls:</strong> Strict role-based access limits ensure that only authorized personnel have access to backend systems for operational maintenance.</li>
+    </ul>
 
-    <h2>9. Contact Us</h2>
-    <div class="contact">
+    <h2>7. Data Retention and Account Deletion</h2>
+    <h3>A. Retention Period</h3>
+    <p>We retain your personal and health information only for as long as your account remains active or as needed to provide you with the App's services.</p>
+
+    <h3>B. User Rights & Complete Account/Data Deletion (Google Play Compliant)</h3>
+    <p>You have the right to access, rectify, export, or permanently delete your account and all associated data at any time:</p>
+    <ul>
+        <li><strong>In-App Deletion:</strong> Navigate to <code>Settings > Account > Delete Account</code>. Confirming this action will permanently erase your profile, health logs, supplement records, and credentials from our active databases.</li>
+        <li><strong>Web / Email Request:</strong> You can also request complete account and personal data deletion by sending an email from your registered email address to <a href="mailto:thanhhoa120409@gmail.com">thanhhoa120409@gmail.com</a> with the subject line <em>"Data Deletion Request"</em>. We will process and permanently delete your records within 30 business days.</li>
+    </ul>
+
+    <h2>8. Children's Privacy (COPPA & Global Standards)</h2>
+    <p>Health AI is intended for individuals aged 16 and older (or 13 where permitted by local law). We do not knowingly collect, store, or process personal data from children under 13. If we discover that a child under 13 has provided us with personal information, we will immediately delete such data from our servers. Parents or guardians who believe their child has submitted personal information to us may contact us at <a href="mailto:thanhhoa120409@gmail.com">thanhhoa120409@gmail.com</a>.</p>
+
+    <h2>9. Changes to This Privacy Policy</h2>
+    <p>We may update this Privacy Policy periodically to reflect changes in legal obligations, our features, or Google Play store policy updates. When updates occur, we will revise the "Last Updated" date at the top of this policy and provide prominent notice within the App or via email before significant updates take effect.</p>
+
+    <h2>10. Contact Us</h2>
+    <p>If you have questions, feedback, or concerns regarding this Privacy Policy or our data handling practices, please contact our Data Protection Officer / Support Team:</p>
+    
+    <div class="contact-box">
         <p><strong>Entity / Developer Name:</strong> HealthAI Team</p>
-        <p><strong>Contact Email:</strong> thanhhoa120409@gmail.com</p>
+        <p><strong>Contact Email:</strong> <a href="mailto:thanhhoa120409@gmail.com">thanhhoa120409@gmail.com</a></p>
         <p><strong>Physical Address:</strong> So 536, Thon 3, Xa Thach Hoa, Huyen Thach That, TP. Ha Noi, Vietnam</p>
     </div>
+</div>
 
 </body>
 </html>
