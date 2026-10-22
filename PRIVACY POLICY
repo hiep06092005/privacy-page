@@ -1,0 +1,111 @@
+# Privacy Policy for Health AI
+
+**Effective Date:** October 22, 2026  
+**Last Updated:** October 22, 2026
+
+HealthAI Team ("we", "our", or "us") operates the **Health AI** mobile application (the "App"). We are committed to protecting your privacy and ensuring the security of your personal and sensitive health data.
+
+This Privacy Policy describes how we collect, use, store, share, and protect your information when you use our App, in compliance with applicable data privacy laws (including GDPR, CCPA/CPRA) and the **Google Play Developer Program Policies** (specifically the User Data Policy and Health Apps Policy).
+
+By downloading, accessing, or using Health AI, you agree to the collection and use of information in accordance with this Privacy Policy. If you do not agree with this policy, please do not use the App.
+
+---
+
+## 1. Important Medical Disclaimer
+
+**Health AI is designed exclusively for general wellness, fitness tracking, and lifestyle informational purposes. The App is NOT a medical device, nor does it provide medical diagnosis, medical advice, treatment, or clinical recommendations.** 
+- Any content, AI assistance, supplement logging, or fitness metrics provided by the App must not replace professional clinical judgment.
+- Always consult a physician or licensed healthcare provider before making medical decisions, starting new exercise routines, or taking dietary supplements.
+
+---
+
+## 2. Information We Collect
+
+We collect information directly from you, automatically through your device, and via integrated features to deliver a personalized health experience:
+
+### A. Personal Information You Provide
+- **Account Registration:** Full name, email address, password (hashed and encrypted), or authentication tokens if logging in via third-party providers (e.g., Google Sign-In).
+- **User Profile & Demographic Metrics:** Age, gender, height, weight, daily water intake goals, and fitness targets.
+- **Health & Lifestyle Data:** Dietary supplement intake schedules, supplement logs, hydration levels, activity logs, and personal health habits.
+
+### B. Device Sensors & Technical Permissions
+Depending on the features you enable, our App may request the following permissions:
+- **Camera & Photos (`CAMERA`, Photo Library):** Used exclusively when you choose to take or upload photos (such as scanning supplement packaging, food logs, or setting a profile picture). We do not access your photo gallery without explicit user action.
+- **Motion Sensors (`Sensors` / Accelerometer / Gyroscope):** Used to detect movement, measure physical steps, and track daily activity.
+- **Location Information (`ACCESS_FINE_LOCATION`, `ACCESS_COARSE_LOCATION`):** If granted, precise or approximate location is used exclusively during active outdoor workout tracking (e.g., walking, jogging distances). We **do not** track your location in the background when the app is closed unless explicitly requested and permitted for active workouts.
+- **Local Storage (`SharedPreferences`):** Used on your device to store offline preferences, theme settings, login session tokens, and local cache.
+
+### C. Automatically Collected Usage & Log Data
+- **Device Information:** Device model, operating system version, unique device identifiers, language settings, and network connection status.
+- **Diagnostic & Crash Data:** Crash logs, performance metrics, and application error logs to ensure application stability.
+
+---
+
+## 3. How We Use Your Information
+
+We process your data only for legitimate, transparent purposes:
+1. **Delivering Core Services:** Providing daily activity dashboards, tracking supplement schedules, calculating hydration requirements, and rendering interactive mascot wellness feedback.
+2. **Personalization:** Tailoring daily goals and habit reminders based on your registered physical metrics and health preferences.
+3. **Social & Community Features (Optional):** Allowing you to connect with friends, share activity progress, and participate in wellness leaderboards (only if you opt-in).
+4. **Security & Authentication:** Authenticating accounts, preventing fraudulent logins, and ensuring integrity of user sessions.
+5. **App Improvement & Bug Fixes:** Analyzing aggregated, anonymized usage patterns to troubleshoot bugs and improve app performance.
+
+---
+
+## 4. No Sale of Personal or Health Data
+
+**We do NOT sell, rent, lease, or commercialize your personal information, physical metrics, or sensitive health data to data brokers, advertising networks, or any third party.** 
+
+We do not use sensitive health or fitness data for targeted behavioral advertising.
+
+---
+
+## 5. Sharing and Disclosure of Information
+
+We will only disclose your data under the following limited circumstances:
+- **Service Providers:** Trusted third-party cloud infrastructure, database hosting, and crash analytics providers (e.g., secure cloud hosting providers). These vendors are bound by strict data processing agreements and are prohibited from using your data for any independent purpose.
+- **With Your Express Consent:** If you choose to share your progress or challenge results with friends inside the App.
+- **Legal Compliance:** When required by law, subpoena, or valid legal process, or to protect the safety, rights, or property of our users or the public.
+
+---
+
+## 6. Data Security and Storage
+
+We implement industry-standard physical, technical, and administrative safeguards to protect your personal data:
+- **Encryption in Transit:** All communications between the App and backend servers are encrypted using modern Transport Layer Security (TLS/HTTPS).
+- **Encryption at Rest:** Sensitive credentials, tokens, and data stored in databases or local storage are encrypted.
+- **Access Control:** Strict role-based access limitations ensure that only authorized personnel have access to system backends for operational maintenance.
+
+---
+
+## 7. Data Retention and Account Deletion
+
+### A. Retention Period
+We retain your personal and health information only for as long as your account remains active or as needed to provide you with the App’s services.
+
+### B. User Rights & Complete Account/Data Deletion (Google Play Compliance)
+You have the right to access, rectify, export, or permanently delete your account and all associated data at any time:
+1. **In-App Deletion:** Navigate to **Settings > Account > Delete Account**. Confirming this will permanently delete your profile, health logs, supplement records, and credentials from our active databases.
+2. **Web / Email Request:** You can also request complete deletion of your account and personal data by sending an email from your registered email address to **thanhhoa120409@gmail.com** with the subject line *"Data Deletion Request"*. We will process and permanently remove your records within 30 business days.
+
+---
+
+## 8. Children’s Privacy (COPPA & Global Standards)
+
+Health AI is intended for individuals aged 16 and older (or 13 where permitted by local jurisdiction). We do not knowingly collect, store, or process personal data from children under the age of 13. If we discover that a child under 13 has provided us with personal information, we will immediately delete such data from our servers. Parents or guardians who believe their child has provided us with personal information may contact us at **thanhhoa120409@gmail.com**.
+
+---
+
+## 9. Changes to This Privacy Policy
+
+We may update this Privacy Policy periodically to reflect changes in our legal obligations, features, or Google Play store policy updates. When changes are made, we will update the "Last Updated" date at the top of this policy and provide prominent notice within the App or via email before material updates take effect.
+
+---
+
+## 10. Contact Us
+
+If you have questions, feedback, or concerns regarding this Privacy Policy or our data handling practices, please contact our Data Protection Officer / Support Team:
+
+- **Entity / Developer Name:** HealthAI Team
+- **Contact Email:** thanhhoa120409@gmail.com
+- **Physical Address:** Số 536, Thôn 3, Xã Thạch Hòa, Huyện Thạch Thất, TP. Hà Nội, Việt Nam
