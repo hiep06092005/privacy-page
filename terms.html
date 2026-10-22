@@ -5,44 +5,212 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terms of Service - Health AI</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; }
-        h1, h2 { color: #1a73e8; }
-        h1 { border-bottom: 2px solid #1a73e8; padding-bottom: 10px; }
-        .warning { background: #fff3cd; border-left: 4px solid #ffc107; padding: 12px; margin: 20px 0; }
-        .contact { background: #e8f0fe; padding: 15px; border-radius: 6px; }
+        :root {
+            --primary-color: #1a73e8;
+            --text-color: #202124;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --border-color: #dadce0;
+            --danger-color: #d93025;
+            --danger-bg: #fce8e6;
+            --info-bg: #e8f0fe;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            border: 1px solid var(--border-color);
+        }
+
+        h1 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 12px;
+            font-size: 28px;
+            margin-top: 0;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            font-size: 20px;
+            margin-top: 28px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 6px;
+        }
+
+        .meta-info {
+            font-size: 14px;
+            color: #5f6368;
+            background-color: #f1f3f4;
+            padding: 10px 15px;
+            border-radius: 4px;
+            margin-bottom: 24px;
+        }
+
+        .disclaimer-box {
+            background-color: var(--danger-bg);
+            border-left: 4px solid var(--danger-color);
+            padding: 16px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .disclaimer-box h2 {
+            color: var(--danger-color);
+            margin-top: 0;
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .contact-box {
+            background-color: var(--info-bg);
+            border: 1px solid #aecbfa;
+            padding: 20px;
+            border-radius: 6px;
+            margin-top: 20px;
+        }
+
+        ul, ol {
+            padding-left: 24px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 22px;
+            }
+            h2 {
+                font-size: 18px;
+            }
+        }
     </style>
 </head>
 <body>
 
+<div class="container">
     <h1>Terms of Service for Health AI</h1>
-    <p><em>Effective Date: October 22, 2026 | Last Updated: October 22, 2026</em></p>
-
-    <div class="warning">
-        <h2>1. CRITICAL MEDICAL DISCLAIMER</h2>
-        <p><strong>NO MEDICAL ADVICE:</strong> THE APP IS PROVIDED FOR GENERAL INFORMATIONAL AND WELLNESS PURPOSES ONLY. WE ARE NOT A MEDICAL ORGANIZATION AND DO NOT PROVIDE MEDICAL DIAGNOSES, PRESCRIPTIONS, OR TREATMENT PLANS. ALWAYS CONSULT A LICENSED PHYSICIAN BEFORE MAKING MEDICAL DECISIONS.</p>
+    
+    <div class="meta-info">
+        <strong>Effective Date:</strong> October 22, 2026 &nbsp;|&nbsp; 
+        <strong>Last Updated:</strong> October 22, 2026
     </div>
 
-    <h2>2. Eligibility & Account Security</h2>
-    <p>You must be at least 16 years old to use the App. You are responsible for maintaining the security of your account credentials.</p>
+    <p>Welcome to <strong>Health AI</strong>! These Terms of Service ("Terms") govern your download, access, and use of the Health AI mobile application (the "App") provided by HealthAI Team ("we", "us", or "our").</p>
 
-    <h2>3. License & Permitted Use</h2>
-    <p>We grant you a limited, personal, non-exclusive license to use the App. You agree not to reverse-engineer, copy, redistribute, or misuse the App's services or APIs.</p>
+    <p>By downloading, installing, creating an account, or using the App, you agree to be bound by these Terms. If you do not agree to these Terms, do not use the App.</p>
 
-    <h2>4. Intellectual Property</h2>
-    <p>All visual designs, mascot animations, branding, and software code are the exclusive property of HealthAI Team.</p>
-
-    <h2>5. Disclaimer of Warranties & Limitation of Liability</h2>
-    <p>THE APP IS PROVIDED "AS IS" WITHOUT WARRANTIES OF ANY KIND. HEALTHAI TEAM SHALL NOT BE LIABLE FOR ANY INDIRECT OR CONSEQUENTIAL DAMAGES ARISING FROM YOUR USE OF THE APP.</p>
-
-    <h2>6. Governing Law</h2>
-    <p>These Terms are governed by the laws of Vietnam. Any legal disputes shall be resolved through the courts of Hanoi, Vietnam.</p>
-
-    <h2>7. Contact Information</h2>
-    <div class="contact">
-        <p><strong>Developer Name:</strong> HealthAI Team</p>
-        <p><strong>Email:</strong> thanhhoa120409@gmail.com</p>
-        <p><strong>Address:</strong> So 536, Thon 3, Xa Thach Hoa, Huyen Thach That, TP. Ha Noi, Vietnam</p>
+    <div class="disclaimer-box">
+        <h2>1. CRITICAL MEDICAL & HEALTHCARE DISCLAIMER (PLEASE READ CAREFULLY)</h2>
+        <ol>
+            <li><strong>NO MEDICAL ADVICE:</strong> THE APP, INCLUDING ALL TEXT, GRAPHICS, IMAGES, AI RESPONSES, DIETARY SUPPLEMENT LOGGERS, HYDRATION METRICS, AND ACTIVITY REMINDERS, IS PROVIDED FOR GENERAL INFORMATIONAL, EDUCATIONAL, AND WELLNESS PURPOSES ONLY.</li>
+            <li><strong>NOT A HEALTHCARE PROVIDER:</strong> WE ARE NOT A MEDICAL ORGANIZATION, LICENSED CLINICIAN, OR PHARMACEUTICAL PROVIDER. THE APP DOES NOT PROVIDE MEDICAL DIAGNOSES, PRESCRIPTIONS, TREATMENT PLANS, OR CLINICAL ADVICE.</li>
+            <li><strong>NO DOCTOR-PATIENT RELATIONSHIP:</strong> USE OF THE APP DOES NOT ESTABLISH A DOCTOR-PATIENT, THERAPIST-PATIENT, OR PHARMACIST-CLIENT RELATIONSHIP.</li>
+            <li><strong>DIETARY SUPPLEMENTS & DIET:</strong> INFORMATION LOGGED OR DISPLAYED REGARDING DIETARY SUPPLEMENTS, VITAMINS, OR DOSAGES IS SOLELY USER-ENTERED OR SOURCED FOR REFERENCE. DO NOT START, STOP, OR MODIFY ANY MEDICATION OR SUPPLEMENT REGIMEN WITHOUT FIRST CONSULTING A LICENSED PHYSICIAN OR QUALIFIED HEALTHCARE PRACTITIONER.</li>
+            <li><strong>EMERGENCIES:</strong> IF YOU THINK YOU MAY HAVE A MEDICAL EMERGENCY, CALL YOUR LOCAL EMERGENCY SERVICES (E.G., 115) OR GO TO THE NEAREST EMERGENCY ROOM IMMEDIATELY. NEVER DISREGARD PROFESSIONAL MEDICAL ADVICE OR DELAY IN SEEKING IT BECAUSE OF SOMETHING YOU READ OR TRACKED IN THIS APP.</li>
+        </ol>
     </div>
+
+    <h2>2. Eligibility and Account Registration</h2>
+    <ol>
+        <li><strong>Age Requirement:</strong> You must be at least 16 years of age (or the minimum age of digital consent in your country) to create an account and use the App.</li>
+        <li><strong>Account Security:</strong> You are responsible for maintaining the confidentiality of your login credentials and for all activities that occur under your account. You agree to notify us immediately of any unauthorized use or security breach.</li>
+        <li><strong>Accurate Information:</strong> You agree to provide accurate, current, and complete information during registration and profile setup, and to update such information as necessary.</li>
+    </ol>
+
+    <h2>3. License and Permitted Use</h2>
+    <p>Subject to these Terms, we grant you a personal, non-exclusive, non-transferable, revocable, limited license to download, install, and use the App on your compatible mobile device solely for your personal, non-commercial use.</p>
+
+    <p>You agree <strong>NOT</strong> to:</p>
+    <ul>
+        <li>Copy, modify, decompile, reverse-engineer, disassemble, or attempt to derive the source code of the App.</li>
+        <li>Rent, lease, lend, sell, sublicense, or distribute the App to any third party.</li>
+        <li>Use the App for any illegal, unauthorized, fraudulent, or harmful purpose.</li>
+        <li>Circumvent or disable any security features, access controls, or rate limits of the App or its backend APIs.</li>
+        <li>Transmit any viruses, worms, malware, or destructive code.</li>
+        <li>Harass, abuse, impersonate, or infringe upon the rights of other users through social or community features.</li>
+    </ul>
+
+    <h2>4. User-Generated Content and Data</h2>
+    <ol>
+        <li><strong>Ownership of Your Data:</strong> You retain all ownership rights to the personal metrics, photos, notes, and information you input into the App ("User Content").</li>
+        <li><strong>License to Operate:</strong> By submitting User Content, you grant us a worldwide, royalty-free license to store, process, and display such content solely to the extent necessary to provide, personalize, and improve the App's services in accordance with our Privacy Policy.</li>
+        <li><strong>Prohibited Content:</strong> You may not upload or transmit any content that is offensive, unlawful, defamatory, infringing on intellectual property rights, or harmful to minors.</li>
+    </ol>
+
+    <h2>5. Intellectual Property Rights</h2>
+    <p>The App, including its visual design, UI elements, mascot animations, branding, logos, sound effects, code, algorithms, and documentation, is the exclusive intellectual property of HealthAI Team and its licensors, protected under copyright, trademark, and other applicable intellectual property laws. Nothing in these Terms grants you any right, title, or interest in our trademarks, copyrights, or proprietary assets.</p>
+
+    <h2>6. Device Permissions and Third-Party Services</h2>
+    <ul>
+        <li>The App utilizes certain device hardware features (e.g., Camera, Accelerometer, Location) to provide core tracking functions. You may disable these permissions in your device settings, but doing so may limit your ability to use certain features.</li>
+        <li>The App may integrate or link to third-party services (such as Google Authentication or external health resources). We are not responsible or liable for the content, privacy policies, or practices of any third-party websites or services.</li>
+    </ul>
+
+    <h2>7. Disclaimer of Warranties</h2>
+    <p>TO THE MAXIMUM EXTENT PERMITTED UNDER APPLICABLE LAW:</p>
+    <ol>
+        <li>THE APP AND ALL ASSOCIATED SERVICES ARE PROVIDED ON AN <strong>"AS IS"</strong> AND <strong>"AS AVAILABLE"</strong> BASIS, WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS, IMPLIED, STATUTORY, OR OTHERWISE.</li>
+        <li>WE EXPRESSLY DISCLAIM ALL WARRANTIES, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, ACCURACY, AND NON-INFRINGEMENT.</li>
+        <li>WE DO NOT WARRANT THAT THE APP WILL BE UNINTERRUPTED, ERROR-FREE, SECURE, ACCURATE, FREE FROM HARMFUL COMPONENTS, OR THAT ANY DEFECTS WILL BE PROMPTLY CORRECTED.</li>
+    </ol>
+
+    <h2>8. Limitation of Liability</h2>
+    <p>TO THE FULLEST EXTENT PERMITTED BY LAW:</p>
+    <ol>
+        <li>IN NO EVENT SHALL HEALTHAI TEAM, ITS DIRECTORS, EMPLOYEES, AFFILIATES, OR PARTNERS BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES (INCLUDING LOSS OF DATA, LOSS OF PROFITS, PERSONAL INJURY, OR HEALTH COMPLICATIONS) ARISING OUT OF OR IN CONNECTION WITH YOUR USE OR INABILITY TO USE THE APP OR RELIANCE ON ANY CONTENT THEREIN.</li>
+        <li>OUR TOTAL AGGREGATE LIABILITY ARISING UNDER OR RELATING TO THESE TERMS OR THE APP SHALL NOT EXCEED THE GREATER OF: (A) THE TOTAL AMOUNT PAID BY YOU TO US FOR APP ACCESS IN THE TWELVE (12) MONTHS PRECEDING THE CLAIM, OR (B) FIFTY US DOLLARS ($50.00 USD).</li>
+    </ol>
+
+    <h2>9. Termination</h2>
+    <ul>
+        <li><strong>By You:</strong> You may terminate these Terms at any time by deleting your account through the App settings and deleting the App from your device.</li>
+        <li><strong>By Us:</strong> We reserve the right to suspend or terminate your account and access to the App at our sole discretion, without prior notice, if you breach any provision of these Terms or engage in conduct detrimental to the App or other users.</li>
+        <li>Upon termination, all licenses granted to you herein shall immediately cease.</li>
+    </ul>
+
+    <h2>10. Governing Law and Dispute Resolution</h2>
+    <p>These Terms shall be governed by and construed in accordance with the laws of Vietnam, without regard to its conflict of law principles. Any dispute, claim, or controversy arising out of or relating to these Terms or the breach thereof shall be resolved through good-faith negotiation, and if unresolved, through the competent courts located in Hanoi, Vietnam.</p>
+
+    <h2>11. Changes to These Terms</h2>
+    <p>We reserve the right to modify these Terms at any time. When we make material changes, we will update the "Last Updated" date and notify you via the App or other reasonable means. Your continued use of the App following the posting of revised Terms signifies your acceptance of the changes.</p>
+
+    <h2>12. Contact Information</h2>
+    <p>If you have any questions, inquiries, or feedback regarding these Terms, please contact us at:</p>
+    
+    <div class="contact-box">
+        <p><strong>Entity / Developer Name:</strong> HealthAI Team</p>
+        <p><strong>Contact Email:</strong> <a href="mailto:thanhhoa120409@gmail.com">thanhhoa120409@gmail.com</a></p>
+        <p><strong>Physical Address:</strong> Số 536, Thôn 3, Xã Thạch Hòa, Huyện Thạch Thất, TP. Hà Nội, Việt Nam</p>
+    </div>
+</div>
 
 </body>
 </html>
