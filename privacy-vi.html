@@ -3,42 +3,236 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chính Sách Bảo Mật - Health AI</title>
+    <title>Chính Sách Bảo Mật Cho Health AI</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; }
-        h1, h2, h3 { color: #1a73e8; }
-        h1 { border-bottom: 2px solid #1a73e8; padding-bottom: 10px; }
-        .disclaimer { background: #f8d7da; border-left: 4px solid #dc3545; padding: 12px; margin: 20px 0; border-radius: 4px; }
-        .contact { background: #e8f0fe; padding: 15px; border-radius: 6px; }
+        :root {
+            --primary-color: #1a73e8;
+            --text-color: #202124;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --border-color: #dadce0;
+            --danger-color: #d93025;
+            --danger-bg: #fce8e6;
+            --info-bg: #e8f0fe;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            border: 1px solid var(--border-color);
+        }
+
+        h1 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 12px;
+            font-size: 28px;
+            margin-top: 0;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            font-size: 20px;
+            margin-top: 28px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 6px;
+        }
+
+        h3 {
+            font-size: 16px;
+            color: #3c4043;
+            margin-top: 18px;
+        }
+
+        .meta-info {
+            font-size: 14px;
+            color: #5f6368;
+            background-color: #f1f3f4;
+            padding: 10px 15px;
+            border-radius: 4px;
+            margin-bottom: 24px;
+        }
+
+        .disclaimer-box {
+            background-color: var(--danger-bg);
+            border-left: 4px solid var(--danger-color);
+            padding: 16px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .disclaimer-box h2 {
+            color: var(--danger-color);
+            margin-top: 0;
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .contact-box {
+            background-color: var(--info-bg);
+            border: 1px solid #aecbfa;
+            padding: 20px;
+            border-radius: 6px;
+            margin-top: 20px;
+        }
+
+        ul, ol {
+            padding-left: 24px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        code {
+            background-color: #f1f3f4;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 14px;
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 22px;
+            }
+            h2 {
+                font-size: 18px;
+            }
+        }
     </style>
 </head>
 <body>
 
-    <h1>Chính Sách Bảo Mật - Health AI</h1>
-    <p><em>Ngày có hiệu lực: 22/10/2026 | Cập nhật lần cuối: 22/10/2026</em></p>
-
-    <p>Đội ngũ HealthAI ("chúng tôi") vận hành ứng dụng di động <strong>Health AI</strong>. Chúng tôi cam kết bảo vệ quyền riêng tư và đảm bảo an toàn cho dữ liệu cá nhân cũng như dữ liệu sức khỏe của bạn.</p>
-
-    <div class="disclaimer">
-        <h2>1. Tuyên Bố Miễn Trừ Trách Nhiệm Y Tế</h2>
-        <p><strong>Health AI được thiết kế phục vụ duy nhất cho mục đích sức khỏe tổng quát và theo dõi thể hình. Ứng dụng KHÔNG phải là thiết bị y tế, và KHÔNG cung cấp chẩn đoán, lời khuyên y tế hay phác đồ điều trị.</strong> Luôn tham khảo ý kiến bác sĩ trước khi đưa ra các quyết định y tế.</p>
+<div class="container">
+    <h1>Chính Sách Bảo Mật Cho Health AI</h1>
+    
+    <div class="meta-info">
+        <strong>Ngày Có Hiệu Lực:</strong> 22 Tháng 10, 2026 &nbsp;|&nbsp; 
+        <strong>Cập Nhật Lần Cuối:</strong> 22 Tháng 10, 2026
     </div>
 
-    <h2>2. Thông Tin Thu Thập</h2>
+    <p>Đội ngũ HealthAI ("chúng tôi", "của chúng tôi") vận hành ứng dụng di động <strong>Health AI</strong> ("Ứng dụng"). Chúng tôi cam kết bảo vệ quyền riêng tư của bạn và đảm bảo an toàn cho dữ liệu cá nhân cũng như dữ liệu sức khỏe nhạy cảm của bạn.</p>
+
+    <p>Chính sách Bảo Mật này mô tả cách chúng tôi thu thập, sử dụng, lưu trữ, chia sẻ và bảo vệ thông tin của bạn khi bạn sử dụng Ứng dụng của chúng tôi, tuân thủ các luật bảo mật dữ liệu hiện hành (bao gồm GDPR, CCPA/CPRA) và <strong>Chính Sách Dành Cho Nhà Phát Triển Của Google Play</strong> (cụ thể là Chính Sách Dữ Liệu Người Dùng và Chính Sách Ứng Dụng Sức Khỏe).</p>
+
+    <p>Bằng cách tải xuống, truy cập hoặc sử dụng Health AI, bạn đồng ý với việc thu thập và sử dụng thông tin theo Chính Sách Bảo Mật này. Nếu bạn không đồng ý với chính sách này, vui lòng không sử dụng Ứng dụng.</p>
+
+    <div class="disclaimer-box">
+        <h2>1. Tuyên Bố Miễn Trừ Trách Nhiệm Y Tế Quan Trọng</h2>
+        <p><strong>Health AI được thiết kế phục vụ duy nhất cho các mục đích thông tin về sức khỏe tổng quát, theo dõi thể hình và lối sống. Ứng dụng KHÔNG phải là thiết bị y tế, cũng như không cung cấp chẩn đoán y khoa, lời khuyên y tế, điều trị hay các khuyến nghị lâm sàng.</strong></p>
+        <ul>
+            <li>Bất kỳ nội dung, sự hỗ trợ từ AI, nhật ký thực phẩm bổ sung hay chỉ số thể hình nào được cung cấp bởi Ứng dụng đều không được thay thế cho đánh giá lâm sàng chuyên nghiệp.</li>
+            <li>Luôn tham khảo ý kiến bác sĩ hoặc cơ sở y tế được cấp phép trước khi đưa ra các quyết định y tế, bắt đầu các bài tập mới hoặc sử dụng các thực phẩm bổ sung dinh dưỡng.</li>
+        </ul>
+    </div>
+
+    <h2>2. Thông Tin Chúng Tôi Thu Thập</h2>
+    <p>Chúng tôi thu thập thông tin trực tiếp từ bạn, tự động thông qua thiết bị của bạn và qua các tính năng tích hợp để cung cấp trải nghiệm sức khỏe cá nhân hóa:</p>
+
+    <h3>A. Thông Tin Cá Nhân Bạn Cung Cấp</h3>
     <ul>
-        <li><strong>Thông tin cá nhân:</strong> Họ tên, email, các chỉ số chiều cao, cân nặng, độ tuổi.</li>
-        <li><strong>Dữ liệu cảm biến:</strong> Máy ảnh (quét bao bì), cảm biến chuyển động (đếm bước chân), vị trí (chỉ dùng khi theo dõi bài tập ngoài trời).</li>
+        <li><strong>Đăng Ký Tài Khoản:</strong> Họ và tên, địa chỉ email, mật khẩu (đã được băm và mã hóa), hoặc các token xác thực nếu đăng nhập qua các bên cung cấp thứ ba (ví dụ: Google Sign-In).</li>
+        <li><strong>Hồ Sơ Người Dùng & Các Chỉ Số Nhân Khẩu Học:</strong> Tuổi, giới tính, chiều cao, cân nặng, mục tiêu lượng nước uống hàng ngày và mục tiêu thể hình.</li>
+        <li><strong>Dữ Liệu Sức Khỏe & Lối Sống:</strong> Lịch trình uống thực phẩm bổ sung dinh dưỡng, nhật ký thực phẩm bổ sung, mức độ uống nước, nhật ký hoạt động và thói quen sức khỏe cá nhân.</li>
     </ul>
 
-    <h2>3. Xóa Tài Khoản & Dữ Liệu</h2>
-    <p>Bạn có thể xóa hoàn toàn tài khoản bất kỳ lúc nào bằng cách truy cập <code>Cài đặt > Tài khoản > Xóa tài khoản</code> trong ứng dụng, hoặc gửi email yêu cầu về <strong>thanhhoa120409@gmail.com</strong>.</p>
+    <h3>B. Cảm Biến Thiết Bị & Quyền Kỹ Thuật</h3>
+    <p>Tùy thuộc vào các tính năng bạn bật, Ứng dụng của chúng tôi có thể yêu cầu các quyền sau:</p>
+    <ul>
+        <li><strong>Máy Ảnh & Hình Ảnh (<code>CAMERA</code>, Thư Viện Ảnh):</strong> Được sử dụng duy nhất khi bạn chọn chụp hoặc tải ảnh lên (chẳng hạn như quét bao bì thực phẩm bổ sung, nhật ký thực phẩm, hoặc đặt ảnh đại diện). Chúng tôi không truy cập thư viện ảnh của bạn nếu không có hành động rõ ràng từ người dùng.</li>
+        <li><strong>Cảm Biến Chuyển Động (<code>Sensors</code> / Gia Tốc Kế / Con Quay Hồi Chuyển):</strong> Được sử dụng để phát hiện chuyển động, đo bước chân thể chất và theo dõi hoạt động hàng ngày.</li>
+        <li><strong>Thông Tin Vị Trí (<code>ACCESS_FINE_LOCATION</code>, <code>ACCESS_COARSE_LOCATION</code>):</strong> Nếu được cấp quyền, vị trí chính xác hoặc tương đối được sử dụng duy nhất trong quá trình theo dõi bài tập ngoài trời đang hoạt động (ví dụ: khoảng cách đi bộ, chạy bộ). Chúng tôi không theo dõi vị trí của bạn trong nền khi ứng dụng đóng trừ khi được yêu cầu rõ ràng và được phép cho các bài tập đang hoạt động.</li>
+        <li><strong>Lưu Trữ Cục Bộ (<code>SharedPreferences</code>):</strong> Được sử dụng trên thiết bị của bạn để lưu trữ các tùy chọn ngoại tuyến, cài đặt chủ đề, token phiên đăng nhập và bộ nhớ tạm cục bộ.</li>
+    </ul>
 
-    <h2>4. Liên Hệ</h2>
-    <div class="contact">
-        <p><strong>Đơn vị phát triển:</strong> HealthAI Team</p>
-        <p><strong>Email:</strong> thanhhoa120409@gmail.com</p>
-        <p><strong>Địa chỉ:</strong> Số 536, Thôn 3, Xã Thạch Hòa, Huyện Thạch Thất, TP. Hà Nội, Việt Nam</p>
+    <h3>C. Dữ Liệu Sử Dụng & Nhật Ký Được Thu Thập Tự Động</h3>
+    <ul>
+        <li><strong>Thông Tin Thiết Bị:</strong> Mẫu thiết bị, phiên bản hệ điều hành, trình định danh thiết bị duy nhất, cài đặt ngôn ngữ và trạng thái kết nối mạng.</li>
+        <li><strong>Chẩn Đoán & Dữ Liệu Sự Cố:</strong> Nhật ký sự cố, chỉ số hiệu suất và nhật ký lỗi ứng dụng để đảm bảo tính ổn định của ứng dụng.</li>
+    </ul>
+
+    <h2>3. Cách Chúng Tôi Sử Dụng Thông Tin Của Bạn</h2>
+    <p>Chúng tôi xử lý dữ liệu của bạn chỉ cho các mục đích hợp pháp, minh bạch:</p>
+    <ol>
+        <li><strong>Cung Cấp Các Dịch Vụ Cốt Lõi:</strong> Cung cấp bảng điều khiển hoạt động hàng ngày, theo dõi lịch trình thực phẩm bổ sung, tính toán yêu cầu uống nước và phản hồi sức khỏe linh vật tương tác.</li>
+        <li><strong>Cá Nhân Hóa:</strong> Tùy chỉnh các mục tiêu hàng ngày và nhắc nhở thói quen dựa trên các chỉ số thể chất đã đăng ký và sở thích sức khỏe của bạn.</li>
+        <li><strong>Tính Năng Xã Hội & Cộng Đồng (Tùy Chọn):</strong> Cho phép bạn kết nối với bạn bè, chia sẻ tiến trình hoạt động và tham gia vào bảng xếp hạng sức khỏe (chỉ khi bạn chủ động tham gia).</li>
+        <li><strong>Bảo Mật & Xác Thực:</strong> Xác thực tài khoản, ngăn chặn đăng nhập gian lận và đảm bảo tính toàn vẹn của các phiên người dùng.</li>
+        <li><strong>Cải Tiến Ứng Dụng & Sửa Lỗi:</strong> Phân tích các mô hình sử dụng tổng hợp, ẩn danh để khắc phục sự cố và cải thiện hiệu suất ứng dụng.</li>
+    </ol>
+
+    <h2>4. Không Bán Dữ Liệu Cá Nhân Hoặc Sức Khỏe</h2>
+    <p><strong>Chúng tôi KHÔNG bán, cho thuê, cho mượn hoặc thương mại hóa thông tin cá nhân, chỉ số thể chất hoặc dữ liệu sức khỏe nhạy cảm của bạn cho các nhà môi giới dữ liệu, mạng quảng cáo hoặc bất kỳ bên thứ ba nào.</strong></p>
+    <p>Chúng tôi không sử dụng dữ liệu sức khỏe hoặc thể hình nhạy cảm cho quảng cáo hành vi mục tiêu.</p>
+
+    <h2>5. Chia Sẻ Và Tiết Lộ Thông Tin</h2>
+    <p>Chúng tôi sẽ chỉ tiết lộ dữ liệu của bạn trong các trường hợp giới hạn sau:</p>
+    <ul>
+        <li><strong>Bên Cung Cấp Dịch Vụ:</strong> Hạ tầng đám mây thứ ba đáng tin cậy, lưu trữ cơ sở dữ liệu và các bên cung cấp phân tích sự cố. Các nhà cung cấp này bị ràng buộc bởi các thỏa thuận xử lý dữ liệu nghiêm ngặt và bị cấm sử dụng dữ liệu của bạn cho bất kỳ mục đích độc lập nào.</li>
+        <li><strong>Với Sự Đồng Ý Rõ Ràng Của Bạn:</strong> Nếu bạn chọn chia sẻ tiến trình hoặc kết quả thử thách của mình với bạn bè bên trong Ứng dụng.</li>
+        <li><strong>Tuân Thủ Pháp Luật:</strong> Khi được yêu cầu bởi pháp luật, trát tòa, hoặc quy trình pháp lý có hiệu lực, hoặc để bảo vệ an toàn, quyền, hoặc tài sản của người dùng chúng tôi hoặc công chúng.</li>
+    </ul>
+
+    <h2>6. Bảo Mật Và Lưu Trữ Dữ Liệu</h2>
+    <p>Chúng tôi thực hiện các biện pháp bảo vệ vật lý, kỹ thuật và quản trị theo tiêu chuẩn ngành để bảo vệ dữ liệu cá nhân của bạn:</p>
+    <ul>
+        <li><strong>Mã Hóa Khi Truyền Tải:</strong> Tất cả các truyền thông giữa Ứng dụng và máy chủ backend đều được mã hóa bằng Transport Layer Security (TLS/HTTPS) hiện đại.</li>
+        <li><strong>Mã Hóa Khi Lưu Trữ:</strong> Các thông tin đăng nhập nhạy cảm, token và dữ liệu được lưu trữ trong cơ sở dữ liệu hoặc lưu trữ cục bộ đều được mã hóa.</li>
+        <li><strong>Kiểm Soát Truy Cập:</strong> Các giới hạn truy cập dựa trên vai trò nghiêm ngặt đảm bảo rằng chỉ nhân sự được ủy quyền mới có quyền truy cập vào backend hệ thống để bảo trì vận hành.</li>
+    </ul>
+
+    <h2>7. Lưu Trữ Dữ Liệu Và Xóa Tài Khoản</h2>
+    <h3>A. Thời Gian Lưu Trữ</h3>
+    <p>Chúng tôi chỉ lưu trữ thông tin cá nhân và sức khỏe của bạn chừng nào tài khoản của bạn còn hoạt động hoặc khi cần thiết để cung cấp cho bạn các dịch vụ của Ứng dụng.</p>
+
+    <h3>B. Quyền Người Dùng & Xóa Tài Khoản/Dữ Liệu Hoàn Toàn (Tuân Thủ Google Play)</h3>
+    <p>Bạn có quyền truy cập, chỉnh sửa, xuất hoặc xóa vĩnh viễn tài khoản và tất cả dữ liệu liên quan bất kỳ lúc nào:</p>
+    <ul>
+        <li><strong>Xóa Trong Ứng Dụng:</strong> Điều hướng đến <code>Cài đặt > Tài khoản > Xóa tài khoản</code>. Việc xác nhận điều này sẽ xóa vĩnh viễn hồ sơ, nhật ký sức khỏe, bản ghi thực phẩm bổ sung và thông tin đăng nhập của bạn khỏi các cơ sở dữ liệu hoạt động của chúng tôi.</li>
+        <li><strong>Yêu Cầu Qua Web / Email:</strong> Bạn cũng có thể yêu cầu xóa hoàn toàn tài khoản và dữ liệu cá nhân của mình bằng cách gửi email từ địa chỉ email đã đăng ký của bạn đến <a href="mailto:thanhhoa120409@gmail.com">thanhhoa120409@gmail.com</a> với dòng tiêu đề <em>"Data Deletion Request"</em>. Chúng tôi sẽ xử lý và xóa vĩnh viễn các bản ghi của bạn trong vòng 30 ngày làm việc.</li>
+    </ul>
+
+    <h2>8. Quyền Riêng Tư Của Trẻ Em (COPPA & Tiêu Chuẩn Toàn Cầu)</h2>
+    <p>Health AI được dành cho các cá nhân từ 16 tuổi trở lên (hoặc 13 tuổi nơi được pháp luật địa phương cho phép). Chúng tôi không cố ý thu thập, lưu trữ hoặc xử lý dữ liệu cá nhân từ trẻ em dưới 13 tuổi. Nếu chúng tôi phát hiện ra rằng một trẻ em dưới 13 tuổi đã cung cấp thông tin cá nhân cho chúng tôi, chúng tôi sẽ ngay lập tức xóa dữ liệu đó khỏi các máy chủ của chúng tôi. Cha mẹ hoặc người giám hộ tin rằng con mình đã cung cấp thông tin cá nhân cho chúng tôi có thể liên hệ với chúng tôi tại <a href="mailto:thanhhoa120409@gmail.com">thanhhoa120409@gmail.com</a>.</p>
+
+    <h2>9. Những Thay Đổi Đối Với Chính Sách Bảo Mật Này</h2>
+    <p>Chúng tôi có thể cập nhật Chính Sách Bảo Mật này định kỳ để phản ánh những thay đổi trong nghĩa vụ pháp lý, tính năng của chúng tôi hoặc các cập nhật chính sách cửa hàng Google Play. Khi có sự thay đổi, chúng tôi sẽ cập nhật ngày "Cập Nhật Lần Cuối" ở đầu chính sách này và cung cấp thông báo nổi bật trong Ứng dụng hoặc qua email trước khi các cập nhật quan trọng có hiệu lực.</p>
+
+    <h2>10. Liên Hệ Với Chúng Tôi</h2>
+    <p>Nếu bạn có câu hỏi, phản hồi hoặc thắc mắc liên quan đến Chính Sách Bảo Mật này hoặc các hoạt động xử lý dữ liệu của chúng tôi, vui lòng liên hệ với Nhân Viên Bảo Vệ Dữ Liệu / Đội Ngũ Hỗ Trợ của chúng tôi:</p>
+    
+    <div class="contact-box">
+        <p><strong>Tên Đơn Vị / Nhà Phát Triển:</strong> HealthAI Team</p>
+        <p><strong>Email Liên Hệ:</strong> <a href="mailto:thanhhoa120409@gmail.com">thanhhoa120409@gmail.com</a></p>
+        <p><strong>Địa Chỉ Thực Tế:</strong> Số 536, Thôn 3, Xã Thạch Hòa, Huyện Thạch Thất, TP. Hà Nội, Việt Nam</p>
     </div>
+</div>
 
 </body>
 </html>
